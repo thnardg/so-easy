@@ -38,7 +38,7 @@ a {
 
 .icon-soeasy {
     max-width: 252px;
-    height: auto;
+    max-height: 90vh;
     display: block;
     padding: 2rem 0;
 }

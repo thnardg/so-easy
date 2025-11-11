@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --main-blue: #1C1C4A;
+    --main-gold: #8D7348;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #F5F5F5;
+    padding: 0.5rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--main-blue); 
+    padding: 2.5rem 0;
+}
+
+p {
+    font-size: 1.25rem;
+    color: var(--main-blue);
+    font-weight: 200;
+}
+
+a {
+    font-size: 1.25rem;
+    color: var(--main-blue);
+    font-weight: 300;
+}
+
+.icon-soeasy {
+    max-width: 252px;
+    height: auto;
+    display: block;
+    padding: 2rem 0;
+}
+
+.icon-soeasy-mobile {
+    max-width: 5.375rem; /* 86px */
+    height: auto;
+    display: none;
+    padding: 1rem 0;
+}
+
+.icon-wip {
+    max-width: 113px;
+    max-height: 92px;
+    display: block;
+    padding: 0;
+}
+
+.icon-whatsapp {
+    max-width: 24px;
+    max-height: 24px;
+    display: inline-block;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+/* Layout */
+.main-container {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    gap: 14.75rem;
+    padding: 0 1rem;
+}
+
+.phone-container {
+    display: flex;
+    gap: 3.5rem;
+}
+
+.phone-item h3 {
+    font-size: 1.25rem;
+    color: var(--main-gold);
+    font-weight: 400;
+    padding: 2.5rem 0 1.5rem 0;
+}
+
+.side-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 583px;
+    padding: 0;
+}
+
+@media (max-width: 1024px) {
+    .main-container {
+        gap: 6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .icon-wip {
+    max-width: 86px;
+    max-height: 70px;
+    display: block;
+    margin: 0 0 24px 0;
+}
+
+    .main-container {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+        height: auto;
+    }
+
+    .side-container {
+        width: 100%;
+        padding: 0 1rem;
+        align-self: center;
+    }
+
+    .phone-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .icon-soeasy {
+        display: none;
+    }
+
+    .icon-soeasy-mobile {
+        display: block; 
+        max-width: 5.375rem; /* 86px */
+        padding: 0.5rem 0;
+        align-self: flex-start;
+        margin-left: 0;
+    }
+
+    .main-container {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+        height: auto;
+    }
+
+    .side-container h1,
+    .side-container > h1 {
+        font-size: 1.25rem; /* 20px */
+        padding: 1rem 0;
+    }
+
+    .side-container p,
+    .side-container a {
+        font-size: 0.875rem;
+    }
+
+    .phone-item h3 {
+        font-size: 1rem;
+        padding: 1.25rem 0 0.75rem 0;
+    }
+
+    .phone-item a {
+        font-size: 1rem;
+        display: inline-block;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 420px) {
+    h1 {
+        font-size: 1.125rem;
+    }
+
+    p, a {
+        font-size: 0.8125rem;
+    }
+
+    .icon-soeasy-mobile {
+        max-width: 4.5rem;
+    }
+}
